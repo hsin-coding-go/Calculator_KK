@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var displayLabel: UILabel!
-    
     @IBOutlet weak var numberOne: UIButton!
     @IBOutlet weak var numberTwo: UIButton!
     @IBOutlet weak var numberThree: UIButton!
@@ -25,13 +23,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberZero: UIButton!
     @IBOutlet weak var decimalPoint: UIButton!
     
-    
     @IBOutlet weak var addingBtn: UIButton!
     @IBOutlet weak var subtractingBtn: UIButton!
     @IBOutlet weak var multiplyingBtn: UIButton!
     @IBOutlet weak var dividingBtn: UIButton!
     @IBOutlet weak var outputBtn: UIButton!
-    
     
     @IBOutlet weak var memoryCleanBtn: UIButton!
     @IBOutlet weak var memoryRecallBtn: UIButton!
@@ -56,7 +52,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.displayLabel.text = "0"
-        
     }
     
     // MARK: Number Action
@@ -108,10 +103,7 @@ class ViewController: UIViewController {
     
     @IBAction func memoryCleaning(_ sender: Any) {
         memoryNumberString = nil
-
     }
-    
-    
     
     @IBAction func memoryAdding(_ sender: Any) {
         self.numberArray.removeAll()
@@ -226,14 +218,6 @@ class ViewController: UIViewController {
     func dividingByAction(originalNumber: Double, dividingByNumber: Double) -> Double {
         return originalNumber / dividingByNumber
     }
-    
-    
-    
-    
-    
-    
-    
- 
 }
 
 
